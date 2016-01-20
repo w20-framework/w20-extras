@@ -1,6 +1,6 @@
 {
-  "name": "w20-extra",
-  "version": "2.2.0",
+  "name": "w20-extras",
+  "version": "2.1.1",
   "ignore": [
     ".*",
     "*.iml",
@@ -16,10 +16,10 @@
     "test-main.js"
   ],
   "dependencies": {
-    "angulartics": "^1.0",
-    "w20": "^2.2"
+    "angulartics": "^1.0.3",
+    "w20": "^2.1.0"
   },
   "devDependencies": {
-    "angular-mocks": "^1.4"
+    "angular-mocks": "^1.4.8"
   }
 }
