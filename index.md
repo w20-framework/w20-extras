@@ -24,7 +24,16 @@ bower install w20-extras
 To include the addon, declare it in the application manifest:
 
 ```
-"bower_components/w20-bootstrap-3/w20-extra.w20.json": {}
+"bower_components/w20-extras/w20-extra.w20.json": {}
+```
+
+If you are using the `w20-bridge` addon, be sure to include the w20-extras module:
+
+```
+<dependency>
+    <groupId>org.seedstack.addons.w20</groupId>
+    <artifactId>w20-bridge-web-extras</artifactId>
+</dependency>
 ```
 
 # Analytics
