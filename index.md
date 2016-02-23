@@ -1,11 +1,19 @@
 ---
-title: "Overview"
-addon: "W20 Extras"
+title: "Basics"
+name: "W20 extras"
 repo: "https://github.com/seedstack/w20-extras"
 author: "SeedStack"
 description: "Provides various functionality such as web analytics "
 min-version: "15.11+"
 frontend: "responsive"
+weight: -1
+tags:
+    - "w20"
+    - "frontend"
+    - "extras"
+    - "analytics"
+zones:
+    - Addons
 menu:
     W20Extras:
         weight: 10
