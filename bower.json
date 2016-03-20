@@ -17,9 +17,9 @@
   ],
   "dependencies": {
     "angulartics": "^1.0.3",
-    "w20": "^2.2.0"
+    "w20": "#master"
   },
   "devDependencies": {
-    "angular-mocks": "^1.4.8"
+    "angular-mocks": "^1.5.2"
   }
 }
