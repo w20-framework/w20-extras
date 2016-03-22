@@ -1,6 +1,7 @@
-# Version 2.1.2 (?)
+# Version 2.2.0 (?)
 
 * [chg] Update for SeedStack 16.4
+* [new] New text module coming from `w20-core`
 
 # Version 2.1.1 (2016-01-21)
 

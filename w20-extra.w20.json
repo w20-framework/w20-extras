@@ -26,12 +26,21 @@
                     }
                 }
             }
+        },
+        "text" : {
+            "path" : "{w20-core}/modules/text",
+            "configSchema": {
+                "title": "Text module configuration",
+                "type": "object",
+                "additionalProperties": false
+            }
         }
     },
 
     "requireConfig": {
         "paths": {
-            "{angulartics}": "${components-path:bower_components}/angulartics/src"
+            "{angulartics}": "${components-path:bower_components}/angulartics/src",
+            "showdown": "${components-path:bower_components}/showdown/dist/showdown"
         },
 
         "shim": {
