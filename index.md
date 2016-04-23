@@ -2,9 +2,9 @@
 title: "Basics"
 name: "W20 extras"
 repo: "https://github.com/seedstack/w20-extras"
-author: "SeedStack"
-description: "Provides various functionality such as web analytics "
-min-version: "15.11+"
+date: 2016-01-20
+author: Kavi RAMYEAD
+description: "Provides additional functionality such as Web analytics."
 frontend: "responsive"
 weight: -1
 tags:
