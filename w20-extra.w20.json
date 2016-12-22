@@ -1,11 +1,11 @@
 {
-    "id":"w20-extra",
-    "name":"W20 extra component",
-    "description":"W20 miscellaneous component",
+    "id": "w20-extra",
+    "name": "W20 extra component",
+    "description": "W20 miscellaneous component",
 
-    "modules" : {
-        "analytics" : {
-            "path" : "{w20-extra}/modules/analytics",
+    "modules": {
+        "analytics": {
+            "path": "{w20-extra}/modules/analytics",
             "configSchema": {
                 "title": "Analytics module configuration",
                 "type": "object",
@@ -27,8 +27,8 @@
                 }
             }
         },
-        "text" : {
-            "path" : "{w20-core}/modules/text",
+        "text": {
+            "path": "{w20-core}/modules/text",
             "configSchema": {
                 "title": "Text module configuration",
                 "type": "object",
@@ -40,11 +40,13 @@
     "requireConfig": {
         "paths": {
             "{angulartics}": "${components-path:bower_components}/angulartics/src",
+            "{angulartics-piwik}": "${components-path:bower_components}/angulartics-piwik/src",
             "showdown": "${components-path:bower_components}/showdown/dist/showdown"
         },
 
         "shim": {
-            "{angulartics}/angulartics": [ "{angular}/angular" ]
+            "{angulartics}/angulartics": ["{angular}/angular"],
+            "{angulartics-piwik}/src/angulartics-piwik": ["{angulartics}/angulartics"]
         }
     }
 }
