@@ -40,7 +40,7 @@ define([
             'and set it using the \'provider\' property in the analytic module configuration.');
     } else {
         if (configuredProvider.plugin) {
-            require(['{angulartics-' + configuredProvider.plugin + '}/src/angulartics-' + config.provider]);
+            require(['{angulartics-' + configuredProvider.suffix + '}/src/angulartics-' + config.provider]);
         } else {
             require(['{angulartics}/angulartics-' + config.provider]);
         }
