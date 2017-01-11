@@ -18,7 +18,7 @@ define([
 
     var W20ExtraPiwik = angular.module('W20ExtraPiwik', ['ng']);
 
-    W20ExtraPiwik.factory('PiwikService', ['$window', function ($window) {
+    W20ExtraPiwik.factory('PiwikService', ['$window', '$http', function ($window, $http) {
 
         function addFileExtension(path) {
             var split = path.split('.');
@@ -37,16 +37,22 @@ define([
                     trackerUrl = settings.trackerUrl || [],
                     siteId = settings.siteId || [];
 
-                require([addFileExtension(jsUrl)], function() {
-                    if ($window._paq) {
-                        $window._paq.push(['trackPageView']);
-                        $window._paq.push(['enableLinkTracking']);
-                        $window._paq.push(['setTrackerUrl', trackerUrl]);
-                        $window._paq.push(['setSiteId', siteId]);
-                    } else {
-                        throw new Error('Unable to configure Piwik: _paq is not defined. Check the jsUrl parameter.');
-                    }
-                });
+               $http.get(jsUrl).then(function successCallback(response) {
+                    // this callback will be called asynchronously
+                    // when the response is available
+                    require([addFileExtension(jsUrl)], function () {
+                        if ($window._paq) {
+                            $window._paq.push(['trackPageView']);
+                            $window._paq.push(['enableLinkTracking']);
+                            $window._paq.push(['setTrackerUrl', trackerUrl]);
+                            $window._paq.push(['setSiteId', siteId]);
+                        } else {
+                            throw new Error('Unable to configure Piwik: _paq is not defined. Check the jsUrl parameter.');
+                        }
+                    });
+                }, function errorCallback(response) {
+                    console.warn('Analytic Piwik config : '.concat('settings parameter jsUrl [', jsUrl, '] couldn\'t be reached'));
+                });
             },
             getAPI: function() {
                 return $window.Piwik;
