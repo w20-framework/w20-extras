@@ -28,9 +28,15 @@ define([
         kissmetrics: { suffix: 'kissmetrics', plugin: true },
         mixpanel: { suffix: 'mixpanel', plugin: true },
         piwik: { suffix: 'piwik', settings: config.settings, plugin: true },
-        segmentio: { suffix: 'segment.io', plugin: true },
         splunk: { suffix: 'splunk', plugin: false },
-        woopra: { suffix: 'woopra', plugin: false }
+        woopra: { suffix: 'woopra', plugin: false },
+        clicky: { suffix: 'clicky', plugin: true },
+        facebookPixel: { suffix: 'facebook-pixel', plugin: true },
+        hubspot: { suffix: 'hubspot', plugin: true },
+        coremetrics: { suffix: 'coremetrics', plugin: true },
+        localytics: { suffix: 'localytics', plugin: true },
+        scout: { suffix: 'scout', plugin: true },
+        segment: { suffix: 'segment', plugin: true }
     };
 
     var configuredProvider = availableProviders[config.provider];
