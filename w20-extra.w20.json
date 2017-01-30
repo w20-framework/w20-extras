@@ -1,11 +1,11 @@
 {
-    "id":"w20-extra",
-    "name":"W20 extra component",
-    "description":"W20 miscellaneous component",
+    "id": "w20-extra",
+    "name": "W20 extra component",
+    "description": "W20 miscellaneous component",
 
-    "modules" : {
-        "analytics" : {
-            "path" : "{w20-extra}/modules/analytics",
+    "modules": {
+        "analytics": {
+            "path": "{w20-extra}/modules/analytics",
             "configSchema": {
                 "title": "Analytics module configuration",
                 "type": "object",
@@ -27,8 +27,8 @@
                 }
             }
         },
-        "text" : {
-            "path" : "{w20-core}/modules/text",
+        "text": {
+            "path": "{w20-core}/modules/text",
             "configSchema": {
                 "title": "Text module configuration",
                 "type": "object",
@@ -40,11 +40,39 @@
     "requireConfig": {
         "paths": {
             "{angulartics}": "${components-path:bower_components}/angulartics/src",
+            "{angulartics-piwik}": "${components-path:bower_components}/angulartics-piwik/src",
+            "{angulartics-adobe-analytics}": "${components-path:bower_components}/angulartics-adobe-analytics/lib",
+            "{angulartics-chartbeat}": "${components-path:bower_components}/angulartics-chartbeat/lib",
+            "{angulartics-clicky}": "${components-path:bower_components}/angulartics-clicky/lib",
+            "{angulartics-facebook-pixel}": "${components-path:bower_components}/angulartics-facebook-pixel/lib",
+            "{angulartics-flurry}": "${components-path:bower_components}/angulartics-flurry/lib",
+            "{angulartics-google-analytics}": "${components-path:bower_components}/angulartics-google-analytics/lib",
+            "{angulartics-hubspot}": "${components-path:bower_components}/angulartics-hubspot/lib",
+            "{angulartics-coremetrics}": "${components-path:bower_components}/angulartics-coremetrics/lib",
+            "{angulartics-kissmetrics}": "${components-path:bower_components}/angulartics-kissmetrics/lib",
+            "{angulartics-localytics}": "${components-path:bower_components}/angulartics-localytics/lib",
+            "{angulartics-mixpanel}": "${components-path:bower_components}/angulartics-mixpanel/lib",
+            "{angulartics-scout}": "${components-path:bower_components}/angulartics-scout/lib",
+            "{angulartics-segment}": "${components-path:bower_components}/angulartics-segment/lib",
             "showdown": "${components-path:bower_components}/showdown/dist/showdown"
         },
 
         "shim": {
-            "{angulartics}/angulartics": [ "{angular}/angular" ]
+            "{angulartics}/angulartics": ["{angular}/angular"],
+            "{angulartics-piwik}/angulartics-piwik": ["{angulartics}/angulartics"],
+            "{angulartics-adobe-analytics}/angulartics-piwik": ["{angulartics}/adobe-analytics"],
+            "{angulartics-chartbeat}/angulartics-piwik": ["{angulartics}/angulartics-chartbeat"],
+            "{angulartics-clicky}/angulartics-piwik": ["{angulartics}/angulartics-clicky"],
+            "{angulartics-facebook-pixel}/angulartics-piwik": ["{angulartics}/angulartics-facebook-pixel"],
+            "{angulartics-flurry}/angulartics-piwik": ["{angulartics}/angulartics-flurry"],
+            "{angulartics-google-analytics}/angulartics-piwik": ["{angulartics}/angulartics-ga"],
+            "{angulartics-hubspot}/angulartics-piwik": ["{angulartics}/angulartics-hubspot"],
+            "{angulartics-coremetrics}/angulartics-piwik": ["{angulartics}/angulartics-coremetrics"],
+            "{angulartics-kissmetrics}/angulartics-piwik": ["{angulartics}/angulartics-kissmetrics"],
+            "{angulartics-localytics}/angulartics-piwik": ["{angulartics}/angulartics-localytics"],
+            "{angulartics-mixpanel}/angulartics-piwik": ["{angulartics}/angulartics-mixpanel"],
+            "{angulartics-scout}/angulartics-piwik": ["{angulartics}/angulartics-scout"],
+            "{angulartics-segment}/angulartics-piwik": ["{angulartics}/angulartics-segment"]
         }
     }
 }
