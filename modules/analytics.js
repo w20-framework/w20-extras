@@ -31,7 +31,7 @@ define([
         splunk: { suffix: 'splunk', plugin: false },
         woopra: { suffix: 'woopra', plugin: false },
         clicky: { suffix: 'clicky', plugin: true },
-        facebookPixel: { suffix: 'facebook-pixel', plugin: true },
+        'facebook-pixel': { suffix: 'facebook-pixel', plugin: true },
         hubspot: { suffix: 'hubspot', plugin: true },
         coremetrics: { suffix: 'coremetrics', plugin: true },
         localytics: { suffix: 'localytics', plugin: true },
