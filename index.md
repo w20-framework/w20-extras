@@ -1,7 +1,7 @@
 ---
 title: "Basics"
 name: "W20 extras"
-repo: "https://github.com/seedstack/w20-extras"
+repo: "https://github.com/w20-framework/w20-extras"
 date: 2016-01-20
 author: Kavi RAMYEAD
 description: "Provides additional functionality such as Web analytics."
@@ -33,15 +33,6 @@ To include the addon, declare it in the application manifest:
 
 ```
 "bower_components/w20-extras/w20-extra.w20.json": {}
-```
-
-If you are using the `w20-bridge` addon, be sure to include the w20-extras module:
-
-```
-<dependency>
-    <groupId>org.seedstack.addons.w20</groupId>
-    <artifactId>w20-bridge-web-extras</artifactId>
-</dependency>
 ```
 
 # Analytics
