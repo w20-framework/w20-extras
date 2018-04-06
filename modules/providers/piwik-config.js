@@ -11,7 +11,7 @@ define([
     'require',
     '{angular}/angular',
 
-    '{angulartics}/angulartics'
+    '{angulartics}/angulartics.min'
 
 ], function (module, require, angular) {
     'use strict';

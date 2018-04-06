@@ -10,9 +10,7 @@ define([
     'module',
     'require',
     '{angular}/angular',
-
-    '{angulartics}/angulartics'
-
+    '{angulartics}/angulartics.min'
 ], function (module, require, angular) {
     'use strict';
 
@@ -39,7 +37,12 @@ define([
         throw new Error ('Analytic provider \'' + config.provider + '\' not found. Check the available list of providers ' +
                          'and set it using the \'provider\' property in the analytic module configuration.');
     } else {
-        require(['{angulartics}/angulartics-' + config.provider]);
+        if(config.provider === "piwik"){
+            require(['{angulartics-piwik}/angulartics-piwik.min']);
+        }else{
+            require(['{angulartics}/angulartics-' + config.provider+'.min']);
+        }
+        
 
         if (configuredProvider.settings) {
 

@@ -13,7 +13,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         clean: [
-            'bower_components/**',
+            'node_modules/**',
             'docs/**',
             'dist/**',
             'coverage/**'
@@ -21,13 +21,6 @@ module.exports = function (grunt) {
         jshint: {
             extra: {
                 src: ['modules/**/*.js']
-            }
-        },
-        bower: {
-            install: {
-                options: {
-                    copy: false
-                }
             }
         },
         karma: {
@@ -71,10 +64,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-ngdocs');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-coveralls');
-    grunt.loadNpmTasks('grunt-bower-task');
     grunt.loadNpmTasks('grunt-contrib-connect');
 
     grunt.registerTask('docs', ['ngdocs', 'connect:docs']);
 
-    grunt.registerTask('default', ['jshint', 'bower', 'karma:test', 'coveralls', 'ngdocs']);
+    grunt.registerTask('default', ['jshint', 'karma:test', 'coveralls', 'ngdocs']);
 };

@@ -39,12 +39,14 @@
 
     "requireConfig": {
         "paths": {
-            "{angulartics}": "${components-path:bower_components}/angulartics/src",
-            "showdown": "${components-path:bower_components}/showdown/dist/showdown"
+            "{angulartics}": "${components-path:node_modules}/angulartics/dist",
+            "{angulartics-piwik}": "${components-path:node_modules}/angulartics-piwik/dist",
+            "showdown": "${components-path:node_modules}/showdown/dist/showdown"
         },
 
         "shim": {
-            "{angulartics}/angulartics": [ "{angular}/angular" ]
+            "{angulartics}/angulartics.min": [ "{angular}/angular" ],
+            "{angulartics-piwik}/angulartics-piwik":["{angulartics}/angulartics.min"]
         }
     }
 }
