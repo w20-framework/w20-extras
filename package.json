@@ -1,18 +1,8 @@
 {
   "name": "w20-extras",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "W20 add-on providing extra modules",
-  "license": "MPL 2.0",
-  "contributors": [
-    {
-      "name": "Adrien LAUER",
-      "email": "adrien.lauer@mpsa.com"
-    },
-    {
-      "name": "Kavi RAMYEAD",
-      "email": "kavi.ramyead@ext.mpsa.com"
-    }
-  ],
+  "license": "MPL-2.0",
   "devDependencies": {
     "angular-mocks": "^1.6.9",
     "grunt": "^1.0.1",
@@ -39,5 +29,15 @@
     "angulartics": "^1.6.0",
     "angulartics-piwik": "^1.0.6",
     "showdown": "^1.8.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w20-framework/w20-extras.git"
+  },
+  "author": "W20 team",
+  "contributors": [
+    "Adrien LAUER <adrien.lauer@mpsa.com>",
+    "Kavi RAMYEAD <kavi.ramyead@ext.mpsa.com>",
+    "Jose Manuel MARTINEZ LAINEZ <josemanuel.martinez1@ext.mpsa.com>"
+  ]
 }
