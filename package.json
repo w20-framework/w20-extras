@@ -1,5 +1,5 @@
 {
-  "name": "w20-extras",
+  "name": "@w20/w20-extras",
   "version": "2.3.0",
   "description": "W20 add-on providing extra modules",
   "license": "MPL-2.0",
