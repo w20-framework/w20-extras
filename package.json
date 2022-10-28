@@ -15,7 +15,7 @@
     "grunt-coveralls": "^1.0.0",
     "grunt-karma": "^1.0.0",
     "grunt-ngdocs": "^0.2.8",
-    "karma": "~0.13",
+    "karma": "~6.4",
     "jasmine-core": "~2.4",
     "karma-coverage": "^1.1.1",
     "karma-jasmine": "~0.3.1",
